@@ -109,5 +109,8 @@
         Urls[name.replace(/-/g, '_')] = url;
     }
 
+    // add the urls to be publically accessible
+    Urls._url_patterns = self.url_patterns
+
     return Urls;
 })();
